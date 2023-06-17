@@ -15,4 +15,4 @@ Script for creating spotify playlist you can share from liked music
   * You created it. Go to settings and copy your Client ID and your client secret when you click view client secret
   * You put them inside your script
 
-# In script there are comments which tells you exactly what you can change in the script. Don't change anything else if you are not sure what you are doing
+> In script there are comments which tells you exactly what you can change in the script. Don't change anything else if you are not sure what you are doing

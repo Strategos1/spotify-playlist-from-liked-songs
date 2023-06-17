@@ -2,14 +2,14 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import dotenv_values
 
-config = dotenv_values("c:\\Users\\Jara Doktor\\Downloads\\.env")
+config = dotenv_values(".env")
 
 
 def create_new_playlist_from_liked_songs():
     # Set up Spotify API credentials
     client_id = config['client_id'] # <--- Change this to your client ID
     client_secret = config['client_secret'] # <--- Change this to your client secret
-    redirect_uri = "http://localhost:8888/callback" # <--- Change this to your redirect URI. You can use http://localhost:8888/callback for testing purposes.
+    redirect_uri = "http://localhost:8888/callback" ### <--- Change this to your redirect URI. You can use http://localhost:8888/callback. Make sure to add this to your Spotify app in the developer dashboard.
     scope = "playlist-modify-private user-library-read" # <--- Don't change this
 
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
